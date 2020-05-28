@@ -1,0 +1,32 @@
+$fontSize : 20px;
+$num: 20;
+
+.main{
+    font-size: $fontSize;
+    margin: $num + 30px;
+    border: 1px solid red;
+}
+body{
+    font-size: $num;
+    background-color: green;
+}
+h2{
+    font-size: 80px;
+    color: green;
+}
+
+li{
+    color: red;
+    font-size: 80px;
+}
+
+.ft{
+    display: flex;
+    border-right: 100px;
+    width: 600px;
+    justify-content: space-around;
+    li{
+        color: indigo;
+        font-size: 20px;
+    }
+}
