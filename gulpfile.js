@@ -76,7 +76,7 @@ gulp.task('sass', function () {
     .pipe(gulp.dest('./css'));
     });
 
-//SASS轉譯 + 合併 + 壓縮
+//SASS轉譯 + 合併 + 壓縮 O
 gulp.task('sassConcatMiniCss',['sass'],function(){
     //src 來源 
     return gulp.src('css/*.css')
@@ -96,7 +96,7 @@ gulp.task('watch',function(){
 
 })
 
-//HTML模板
+//HTML模板 O
 gulp.task('fileinclude', function() {
     gulp.src(['*.html'])
     .pipe(fileinclude({
@@ -107,7 +107,7 @@ gulp.task('fileinclude', function() {
 });
 
 
-//browser-Sync(小型的阿帕契)  設定default 就可以直接在終端機中使用 gulp 執行
+//browser-Sync(小型的阿帕契)  設定default 就可以直接在終端機中使用 gulp 執行 O
 gulp.task('default',function(){
     browserSync.init({
         server: {
